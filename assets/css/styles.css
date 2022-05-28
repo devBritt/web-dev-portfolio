@@ -51,9 +51,38 @@ a {
     text-decoration: none;
     color: var(--light-color);
 }
+ul, menu {
+    list-style: none;
+}
+#top {
+    display: none;
+}
 
 /* header styles */
-
+header {
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+}
+/* TODO: add hamburger button to toggle navigation */
+.logo {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.logo img {
+    width: 40%;
+}
+.nav {
+    display: flex;
+    justify-content: space-around;
+}
+.nav li {
+    display: flex;
+    /* justify-content: space-around; */
+    font-family: barlowsc-light;
+    font-size: 6vw;
+}
 
 /* hero styles */
 

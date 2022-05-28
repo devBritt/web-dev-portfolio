@@ -8,13 +8,17 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- scroll to top of page when logo is clicked, but don't reload -->
+    <div id="top"></div>
+
     <!-- header with navigation -->
     <header>
-        <img src="./assets/images/devBritt-logo.svg" alt="Brittany Carlton's logo." class="logo" />
+        <a href="#top" class="logo"><img src="./assets/images/devBritt-logo.svg" alt="Brittany Carlton's logo." /></a>
+        <!-- TODO: Add hamburger button to show/hide navigation -->
         <menu class="nav">
             <li><a href="#bio">Bio</a></li>
-            <li><a href="projects">Projects</a></li>
-            <li><a href="get-in-touch">Get in Touch</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#get-in-touch">Get in Touch</a></li>
             <li><a href="#">Resume</a></li>
         </menu>
     </header>
