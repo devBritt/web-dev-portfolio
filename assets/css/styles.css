@@ -1,0 +1,67 @@
+/* variables */
+:root {
+    /* colors */
+    --primary-color: #004743;
+    --secondary-color: #F88C7F;
+    --accent-color: #EABD2A;
+    --dark-color: #001E1D;
+    --light-color: #E8E5E4;
+    --light-accent: #BBD8B6;
+    /* repeated values/other */
+}
+
+/* custom fonts */
+@font-face {
+    font-family: barlowsc-light;
+    src: url(../fonts/BarlowSemiCondensed-Light.ttf);
+}
+@font-face {
+    font-family: barlowsc-reg;
+    src: url(../fonts/BarlowSemiCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: barlowsc-sb;
+    src: url(../fonts/BarlowSemiCondensed-SemiBold.ttf);
+}
+@font-face {
+    font-family: barlowsc-sb-i;
+    src: url(../fonts/BarlowSemiCondensed-SemiBoldItalic.ttf);
+}
+@font-face {
+    font-family: barlowsc-eb;
+    src: url(../fonts/BarlowSemiCondensed-ExtraBold.ttf);
+}
+
+/* global styles */
+* {
+    /* override browser defaults */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--primary-color);
+}
+p {
+    font-family: barlowsc-reg;
+    color: var(--light-color);
+}
+a {
+    font-family: barlowsc-light;
+    text-decoration: none;
+    color: var(--light-color);
+}
+
+/* header styles */
+
+
+/* hero styles */
+
+
+/* bio styles */
+
+
+/* ;rojects styles */
+
+
+/* get in touch styles */
