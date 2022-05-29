@@ -8,6 +8,7 @@
     --light-color: #E8E5E4;
     --light-accent: #BBD8B6;
     /* repeated values/other */
+    --main-spacing: 15px;
 }
 
 /* custom fonts */
@@ -46,6 +47,12 @@ p {
     font-family: barlowsc-reg;
     color: var(--light-color);
 }
+h2 {
+    margin-bottom: 10px;
+    font-family: barlowsc-sb;
+    font-size: 7vw;
+    color: var(--light-accent);
+}
 a {
     font-family: barlowsc-light;
     text-decoration: none;
@@ -72,7 +79,7 @@ header {
 }
 /* TODO: (eventually) add hamburger button to toggle navigation */
 .logo {
-    margin: 20px 0 5px 0;
+    margin: 20px 0 10px 0;
     display: flex;
     justify-content: center;
 }
@@ -80,7 +87,7 @@ header {
     width: 40%;
 }
 .nav {
-    margin: 5px 15px 15px 15px;
+    margin: 0 var(--main-spacing) var(--main-spacing) var(--main-spacing);
     display: flex;
     justify-content: space-around;
 }
@@ -103,14 +110,14 @@ header {
 }
 #hero h1 {
     display: flex;
-    margin: 7px 15px 10px 15px;
+    margin: 7px var(--main-spacing) 10px var(--main-spacing);
     font-family: barlowsc-eb;
     font-size: 8vw;
     color: var(--secondary-color);
 }
 #hero h2 {
     display: flex;
-    margin: 7px 15px;
+    margin: 7px var(--main-spacing);
     font-family: barlowsc-sb-i;
     font-size: 5.8vw;
     text-align: right;
@@ -126,27 +133,21 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin: 15px;
-}
-.bio h2 {
-    display: flex;
-    font-family: barlowsc-sb;
-    font-size: 7vw;
-    color: var(--light-accent);
+    margin: var(--main-spacing) var(--main-spacing) 8px var(--main-spacing);
 }
 .bio ul {
-    margin: 10px 0;
+    margin-bottom: 10px;
     display: flex;
 }
 .bio ul li {
-    margin-right: 15px;
-    display: flex;
+    /* make static space between */
+    margin-right: var(--main-spacing);
     font-family: barlowsc-sb-i;
     font-size: 5vw;
     color: var(--accent-color);
 }
 .story {
-    padding-bottom: 15px;
+    padding-bottom: var(--main-spacing);
     border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -157,12 +158,7 @@ header {
     flex-direction: column;
 }
 .projects h2 {
-    display: flex;
-    width: 100%;
-    margin: 0 0 10px 15px;
-    font-family: barlowsc-sb;
-    font-size: 7vw;
-    color: var(--light-accent);
+    margin-left: var(--main-spacing);
 }
 /* shared project card styles */
 .scrnshot {
@@ -216,7 +212,15 @@ header {
 }
 
 /* get in touch styles */
-
-
-/* linear gradient */
-/* background: linear-gradient(to bottom right, rgba(248, 150, 127, 0.6), rgba(234, 189, 42, 0.6)); */
+.get-in-touch {
+    height: 13vh;
+    margin: 10px var(--main-spacing);
+}
+.icons {
+    display: flex;
+    justify-content: space-around;
+    border-left: 2px solid var(--secondary-color);
+}
+.icons a img {
+    width: 10vw;
+}
