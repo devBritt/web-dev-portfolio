@@ -7,7 +7,6 @@
     --dark-color: #001E1D;
     --light-color: #E8E5E4;
     --light-accent: #BBD8B6;
-    --transparent-bg: rgba(0, 30, 29, 0.5);
     /* repeated values/other */
 }
 
@@ -118,7 +117,7 @@ header {
     color: var(--secondary-color);
 }
 .bg-color {
-    background: var(--transparent-bg);
+    background: rgba(0, 30, 29, 0.5);
     backdrop-filter: blur(2px);
 }
 
@@ -153,7 +152,6 @@ header {
 
 /* projects styles */
 /* TODO: add hover effects */
-/* TODO: add coming soon card styles */
 .projects {
     display: flex;
     flex-direction: column;
@@ -166,38 +164,59 @@ header {
     font-size: 7vw;
     color: var(--light-accent);
 }
-.project {
-    display: flex;
+/* shared project card styles */
+.scrnshot {
+    width: 50vw;
+    height: 19vh;
+    position: relative;
 }
-.run-buddy {
-    display: flex;
-    width: 100vw;
-    height: 38vh;
-    background: url("../images/run-buddy.jpg");
-    background-size: cover;
-    background-position: center;
+.scrnshot img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .cover {
-    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
-    background: var(--transparent-bg);
-    backdrop-filter: blur(2px);
+    height: 100%;
+    background: linear-gradient(to bottom right, rgba(248, 150, 127, 0.6), rgba(234, 189, 42, 0.6));
 }
 .project-info {
-    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+}
+/* run buddy project card styles */
+.highlight {
+    width: 100vw;
+    height: 38vh;
+}
+.highlight .scrnshot {
+    width: 100vw;
+    height: 38vh;
+}
+/* standard project card styles */
+.small-projects {
     display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-wrap: wrap;
 }
-.project-info h3, .project-info p {
-    background: var(--accent-color);
-    padding-left: 15px;
+.small-project{
+    position: relative;
+    width: 50vw;
+    height: 19vh;
 }
-.project-info h3 {
-    padding-top: 10px;
-}
-.project-info p {
-    padding-bottom: 10px;
+.scrnshot {
+    width: 50vw;
+    height: 19vh;
 }
 
 /* get in touch styles */
+
+
+/* linear gradient */
+/* background: linear-gradient(to bottom right, rgba(248, 150, 127, 0.6), rgba(234, 189, 42, 0.6)); */
