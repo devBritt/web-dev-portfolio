@@ -41,6 +41,7 @@
     box-sizing: border-box;
 }
 body {
+    
     background-color: var(--primary-color);
 }
 p {
@@ -101,6 +102,7 @@ header {
     flex-direction: column;
     justify-content: space-between;
     height: 70vh;
+    width: 100vw;
     background: url("../images/hero-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -150,10 +152,10 @@ header {
 }
 
 /* projects styles */
-/* TODO: add hover effects */
 .projects {
     display: flex;
     flex-direction: column;
+    width: 100vw;
 }
 .projects h2 {
     margin-left: var(--main-spacing);
@@ -226,4 +228,12 @@ header {
 }
 .icons a img {
     width: 10vw;
+}
+
+/* media queries */
+/* detect desktop screen */
+@media (pointer:fine) {
+    body {
+        overflow: overlay;
+    }
 }
