@@ -208,8 +208,6 @@ header {
 }
 .small-project{
     position: relative;
-    width: 50vw;
-    height: 19vh;
 }
 .scrnshot {
     width: 50vw;
@@ -232,7 +230,7 @@ header {
 
 /* media queries */
 /* detect desktop screen */
-@media (pointer:fine) {
+@media (any-pointer:fine) {
     body {
         overflow: overlay;
     }
