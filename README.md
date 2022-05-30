@@ -19,7 +19,7 @@ Welcome to Brittany Carlton's, aka devBritt's, portfolio website repo! You can f
 > WHEN I resize the page or view the site on various screens and devices, I am presented with a responsive layout that adapts to my viewport.
 ## Screenshots
 
-![App Screenshot](.assets/images/screenshot.jpg)
+![App Screenshot](./assets/images/screenshot.jpg)
 
 
 ## Demo
